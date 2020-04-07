@@ -1,10 +1,7 @@
-x = 50
-y = "3"
+def sayHi(name) 
+  puts "こんにちは #{name}くん"
+  score = 80 #メソッド内に定義された変数は外からアクセスできない
+end
 
-p x + y.to_i
-p x + y.to_f
-p x.to_s + y
-
-
-scores = {taguchi: 200, koji: 400}
-p scores.to_a
+sayHi("佐藤")
+put score
