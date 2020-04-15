@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 4]
+numbers = (1..5).to_a
 sum = 0
-numbers.each { |n| sum += n}
+numbers.each{ |n| sum += n}
 puts sum
