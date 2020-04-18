@@ -1,15 +1,38 @@
-#ブロック引数iは要素の添え字
-fruits = ['apple', 'orange', 'melon']
-fruits.each_with_index { |fruit, i| puts "#{i}: #{fruit}"}
+# while 条件式
+#   繰り返したい処理
+# end
+a = []
+while a.size < 5
+  a << 1
+end
+puts a
 
-fruits = ['apple', 'orange', 'melon']
-fruits.map.with_index { |fruit, i| puts "#{i}: #{fruit}"}
+# for 変数 in 配列やハッシュ
+#   繰り返し処理
+# end
+numbers = [1, 2, 3, 4]
+  sum = 0
+  for n in numbers
+    sum += n
+  end
+puts sum
 
-#each.with_index(数値)で添え字をその数値から始める
-fruits = ['apple', 'orange', 'melon']
-fruits.each.with_index(1) { |fruit, i| puts "#{i}: #{fruit}"}
+# each文での書き換え
+numbers = [1, 2, 3, 4]
+  sum = 0
+  numbers.each do |n|
+    sum += n
+  end
+  puts sum
 
-fruits = ['apple', 'orange', 'melon']
-fruits.map.with_index(100) { |fruit, i| puts "#{i}: #{fruit}"}
+
+# break 
+numbers = [1, 2, 3, 4, 5].shuffle
+numbers.each do |n|
+  puts n
+  break if n == 5
+end
+
+
 
 
