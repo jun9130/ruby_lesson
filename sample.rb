@@ -1,16 +1,25 @@
-num = 1
-while num < 101
-  str = ""
-  if num % 3 == 0
-    str = str + "fizz"
+class Article
+
+  def initialize(author, title, content)
+    @author = author
+    @title = title
+    @content = content
   end
 
-  if num % 5 == 0
-    str = str + "buzz"
+  def author
+    @author
   end
-  if str == ""
-    str = str + num.to_s
+
+  def title
+    @title
   end
-  puts str
-  num += 1
+
+  def content
+    @content
+  end
+
 end
+article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
+puts "著者: #{article.author}"
+puts "タイトル: #{article.title}"
+puts "本文: #{article.content}"
