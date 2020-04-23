@@ -1,25 +1,15 @@
-class Article
+class User  
+end
 
-  def initialize(author, title, content)
-    @author = author
-    @title = title
-    @content = content
-  end
+user = User.new
+puts User.superclass
+puts user.class
 
-  def author
-    @author
-  end
+#クラスの継承
+# class サブクラス(子クラス) < スーパークラス(親クラス)
+# end
 
-  def title
-    @title
-  end
-
-  def content
-    @content
-  end
+class DVD < Product
 
 end
-article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
-puts "著者: #{article.author}"
-puts "タイトル: #{article.title}"
-puts "本文: #{article.content}"
+
