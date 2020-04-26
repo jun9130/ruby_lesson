@@ -1,10 +1,19 @@
-require "date"
+#問1
+if a + b > 0
+  puts "計算結果は0より大きいです"
+end
 
-day = Date.today.wday
-days = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"]
+unless a + b <= 0
+  puts "計算結果は0より大きいです"
+end
 
-if day == 5
-  puts "今日は#{days[day]}だ！！！"
-else
-  puts "今日は#{days[day]}"
+#問2
+fruits_price = [["apple", [200, 250, 220]], ["orange", [100, 120, 80]], ["melon", [1200, 1500]]]
+
+fruits_price.each do |fruit|
+  sum = 0
+  fruit[1].each do |price|
+    sum += price
+  end
+  puts "#{fruit[0]}の合計金額は#{sum}円です"
 end
