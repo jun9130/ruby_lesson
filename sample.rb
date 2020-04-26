@@ -1,8 +1,10 @@
-attr = {name: "田中", age: 27, height: 180, weight: 75}
-
-values = []
-attr.each do |key, value| 
-  values << value
+num = 0
+while num < 100 do
+  puts num
+  num += 1
 end
 
-p values
+num = 0
+for num in 0..99 do
+  puts num
+end
