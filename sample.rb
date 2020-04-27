@@ -1,19 +1,15 @@
 #問1
-if a + b > 0
-  puts "計算結果は0より大きいです"
-end
-
-unless a + b <= 0
-  puts "計算結果は0より大きいです"
+a = 0
+while a < 100 do
+ puts a
+ a += 1
 end
 
 #問2
-fruits_price = [["apple", [200, 250, 220]], ["orange", [100, 120, 80]], ["melon", [1200, 1500]]]
+str = "1"
+puts str.to_i
 
-fruits_price.each do |fruit|
-  sum = 0
-  fruit[1].each do |price|
-    sum += price
-  end
-  puts "#{fruit[0]}の合計金額は#{sum}円です"
-end
+#問3
+array = ["dog", "cat", "something"]
+array.delete("something")
+puts array
