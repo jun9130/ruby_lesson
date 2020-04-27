@@ -1,15 +1,28 @@
-#問1
-a = 0
-while a < 100 do
- puts a
- a += 1
+class Article
+
+  def initialize(author, title, content)
+    @author = author
+    @title = title
+    @content = content
+  end
+
+  def author
+    "著者: #{@author}"
+  end
+
+  def title
+    "タイトル: #{@title}"
+  end
+
+  def content
+    "本文: #{@content}"
+  end
+
+
 end
 
-#問2
-str = "1"
-puts str.to_i
+article = Article.new("阿部", "Rubyの素晴らしさについて", "Awesome Ruby!")
 
-#問3
-array = ["dog", "cat", "something"]
-array.delete("something")
-puts array
+puts "著者: #{article.author}"
+puts "タイトル: #{article.title}"
+puts "本文: #{article.content}"
