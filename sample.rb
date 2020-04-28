@@ -1,14 +1,27 @@
-def search(target_num, input)
+user_data = [
+  {
+    user: {
+        profile: {
+            name: 'George'
+        }
+    }
+  },
+  {
+    user: {
+        profile: {
+          name: 'Alice'
+        }
+    }
+  },
+  {
+    user: {
+        profile: {
+            name: 'Taro'
+        }
+    }
+  }
+]
 
-  input.each_with_index do |num, index|
-    if num == target_num
-      puts "#{index + 1}番目にあります"
-      return
-    end
-  end
-  puts "その数は含まれていません"
+user_data.each do |u|
+  puts u[:user][:profile][:name]
 end
-
-input = [3, 5, 9 ,12, 15, 21, 29, 35, 42, 51, 62, 78, 81, 87, 92, 93]
-
-search(3, input)
