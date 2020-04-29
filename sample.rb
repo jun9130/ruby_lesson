@@ -1,22 +1,26 @@
-#デフォルト値付き引数
-def method1(num=3)
-  puts num
+#問1
+def output(num)
+  num.times{ puts "Hello!" }
 end
 
-method1
-method1(10)
+puts "何回表示させますか？"
+num = gets.to_i
+output(num)
 
-#可変長引数
-def method2(*num)
-  p num
+
+#問2
+class Person
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
 end
 
-method2(10, 20)
-method2(1000, "aaa", 50)
-
-#キーワード引数
-def method3(name:)
-  puts name
+class Student < Person
+  def introduce
+    puts "私の名前は#{@name}です。#{@age}歳です。"
+  end
 end
 
-method3(name: "yamada")
+student = Student.new("jun", 22)
+student.introduce
