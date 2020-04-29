@@ -1,26 +1,18 @@
-#問1
-def output(num)
-  num.times{ puts "Hello!" }
+def fizzbuzz(max_num)
+
+  (1..max_num).each do |num|
+    if num % 15 == 0
+      puts "FizzBuzz"
+    elsif num % 5 == 0
+      puts "Buzz"
+    elsif num % 3 == 0
+      puts "Fizz"
+    else
+      puts num
+    end
+  end
 end
 
-puts "何回表示させますか？"
+puts 'いくつまで数えますか？'
 num = gets.to_i
-output(num)
-
-
-#問2
-class Person
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
-end
-
-class Student < Person
-  def introduce
-    puts "私の名前は#{@name}です。#{@age}歳です。"
-  end
-end
-
-student = Student.new("jun", 22)
-student.introduce
+fizzbuzz(num)
