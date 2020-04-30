@@ -1,13 +1,17 @@
-def sleep_in(is_weekday, is_vacation)
-  if (is_weekday != true) || (is_vacation == false)
+def police_trouble(a, b)
+  if a == true && b == true || a == false && b == false
     puts "True"
-  else
+  else  
     puts "False"
   end
+
 end
 
+puts "犯人Aはtrue or false？"
+a = gets.to_s
+puts "犯人Bはtrue or false？"
+b = gets.to_s
 
-is_weekday = true
-is_vacation = false
+police_trouble(a, b)
 
-sleep_in(is_weekday,is_vacation)
+
