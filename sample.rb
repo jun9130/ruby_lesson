@@ -1,7 +1,6 @@
-def parrot_trouble(talking, hour)
-  if (talking  && (hour < 7 || hour > 20))
-    puts "NG"
-  else
-    puts "OK"
-  end
+def array_count9(nums)
+  count = nums.count(9)
+  puts count
 end
+
+array_count9([1, 2, 9, 11, 9, 9])
