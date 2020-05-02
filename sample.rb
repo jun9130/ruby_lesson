@@ -1,6 +1,13 @@
-def array_count9(nums)
-  count = nums.count(9)
-  puts count
+def array123(nums)
+  if (nums.include?(1) && nums.include?(2) && nums.include?(3))
+    puts "True"
+  else
+    puts "False"
+  end
 end
 
-array_count9([1, 2, 9, 11, 9, 9])
+nums = [1,2,3]
+array123(nums)
+
+nums = [9]
+array123(nums)
