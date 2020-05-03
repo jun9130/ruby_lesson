@@ -1,13 +1,10 @@
-def array123(nums)
-  if (nums.include?(1) && nums.include?(2) && nums.include?(3))
-    puts "True"
-  else
-    puts "False"
-  end
+char = "frqjudwxodwlrq"
+char_ary = char.split("")
+
+changed_char_ary = []
+
+char_ary.each do |char|
+  changed_char_ary << (char.ord - 3).chr
 end
 
-nums = [1,2,3]
-array123(nums)
-
-nums = [9]
-array123(nums)
+p changed_char_ary.join
