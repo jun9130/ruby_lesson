@@ -1,9 +1,5 @@
-def add_tax(price)
-  puts "税込#{(price * 1.1).round}円です。"
-
+module ProductsHelper
+  def converting_to_jpy(price)
+    "#{price.to_s(:delimited, delimiter: ',')}円"
+  end
 end
-
-
-puts "金額を入力してください"
-price = gets.to_i
-add_tax(price)
