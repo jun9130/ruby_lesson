@@ -1,10 +1,9 @@
-char = "frqjudwxodwlrq"
-char_ary = char.split("")
+def add_tax(price)
+  puts "税込#{(price * 1.1).round}円です。"
 
-changed_char_ary = []
-
-char_ary.each do |char|
-  changed_char_ary << (char.ord - 3).chr
 end
 
-p changed_char_ary.join
+
+puts "金額を入力してください"
+price = gets.to_i
+add_tax(price)
