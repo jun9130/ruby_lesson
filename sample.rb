@@ -1,7 +1,3 @@
-def in1to10(num,outside_mode)
-  if (num >= 1 && num <= 10) || outside_mode
-    puts "True"
-  else
-    puts "False"
-  end
+def left2(str)
+  puts str[2..-1] + str[0..1]  
 end
