@@ -1,3 +1,7 @@
-def left2(str)
-  puts str[2..-1] + str[0..1]  
+def cat_dog(str)
+  if str.include?("cat") && str.include?("dog")
+    puts "True"
+  else
+    puts "False"
+  end
 end
