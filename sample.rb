@@ -1,18 +1,8 @@
-def fizzbuzz(max_num)
-
-  (1..max_num).each do |num|
-    if num % 15 == 0
-      puts "FizzBuzz"
-    elsif num % 5 == 0
-      puts "Buzz"
-    elsif num % 3 == 0
-      puts "Fizz"
-    else
-      puts num
-    end
+def near_ten(num)
+  quotient = num % 10
+  if quotient  <= 2 || quotient >= 8
+    puts "True"
+  else
+    puts "False"
   end
 end
-
-puts 'いくつまで数えますか？'
-num = gets.to_i
-fizzbuzz(num)
