@@ -1,6 +1,7 @@
-def near_ten(num)
-  quotient = num % 10
-  if quotient  <= 2 || quotient >= 8
+def xyz_there(str) 
+  if str.include?(".xyz")
+    puts "False"
+  elsif str.include?("xyz")
     puts "True"
   else
     puts "False"
