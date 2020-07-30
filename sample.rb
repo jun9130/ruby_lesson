@@ -1,10 +1,17 @@
-input_line = []
+puts "最初の言葉を入れてください"
+wordA = gets.to_s
+puts "次の言葉を入れてください"
+wordB = gets.to_s
 
-for n in 0..4  do
-  puts "#{n + 1}回目の数字入力してください"
-  number = gets.to_i
-  input_line << number
+if wordA == wordB #語句が一致している場合
+  puts "OK"
+else
+  puts "NG"
 end
 
-puts "入力した5個の数字の中で最大の数字は「#{input_line.max}」で最小の数字は「#{input_line.min}」です"
 
+# if wordA != wordB 語句が一致していない場合
+#   puts "NG"
+# else
+#   puts "OK"
+# end
