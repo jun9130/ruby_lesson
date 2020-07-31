@@ -1,17 +1,15 @@
-puts "最初の言葉を入れてください"
-firstWord = gets.to_s
-puts "次の言葉を入れてください"
-secondWord = gets.to_s
+puts "1から100まで好きな数字を入れてください"
+number = gets.to_i
 
-if firstWord == secondWord #語句が一致している場合
-  puts "OK"
-else
-  puts "NG"
+while number  do
+  if number % 15 == 0
+    puts "Fizz Buzz"
+  elsif number % 3 == 0
+    puts "Fizz"
+  elsif number % 5 == 0
+    puts "Buzz"
+  else
+    puts number
+  end
+  return  
 end
-
-
-# if firstWord != secondWord 語句が一致していない場合
-#   puts "NG"
-# else
-#   puts "OK"
-# end
