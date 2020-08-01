@@ -1,15 +1,16 @@
 puts "1から100まで好きな数字を入れてください"
 number = gets.to_i
+n = 1
 
-while number  do
-  if number % 15 == 0
+number.times do
+  if n % 15 == 0
     puts "Fizz Buzz"
-  elsif number % 3 == 0
+  elsif n % 3 == 0
     puts "Fizz"
-  elsif number % 5 == 0
+  elsif n % 5 == 0
     puts "Buzz"
   else
-    puts number
+    puts n
   end
-  return  
+  n = n + 1
 end
