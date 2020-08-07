@@ -1,3 +1,3 @@
-puts 'abcdefghijk'.chars
-p 'abcdefghijk'.chars
-print 'abcdefghijk'.chars
+3.times { |n|
+  puts n + 1
+}
