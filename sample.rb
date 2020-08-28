@@ -1,8 +1,3 @@
-#splitメソッド
-input = gets
-name = input.split(" ") #空白で区切る
-puts name
+#mapメソッド
 
-input = gets
-name = input.split(".") #.で区切る
-puts name
+puts [1, 2, 3].map{|n| n * 10}
