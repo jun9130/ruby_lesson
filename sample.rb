@@ -1,8 +1,6 @@
-numbers = [1, 2, 3]
-print numbers #末尾改行なし
-puts numbers
-p numbers
+numbers = []
 
-print "apple" 
-puts "orange"
-p "strawberry"
+puts "数字を半角スペースで入れてください"
+num = gets
+numbers = num.split(" ")
+puts "最小の数は#{numbers.min}です"
