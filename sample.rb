@@ -1,14 +1,12 @@
-array = []
+# lines = []
+# while line = gets
+#     lines << line.chomp.split(' ').map(&:to_i)
+# end
 
-puts "何個の数字を入れますか？"
-count = gets.to_i
+# puts lines.uniq.sort
 
-n = 1
-count.times {
-  puts "#{n}回目の数字を入れてください"
-  number = gets.to_i
-  array << number
-  n += 1
-}
+a = []
+n = gets.to_i
+n.times { a.push gets.to_i }
 
-puts "最小の数は#{array.min}です。"
+puts a.sort
