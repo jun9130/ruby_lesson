@@ -1,12 +1,15 @@
-# lines = []
-# while line = gets
-#     lines << line.chomp.split(' ').map(&:to_i)
-# end
+def input 
+  puts "繰り返す回数入力してください"
+  n = gets.to_i
 
-# puts lines.uniq.sort
+  if n != 0
+    puts "繰り返し " * n
+  else
+    puts "※ 半角数字を入れてください"
+    return input
+  end
+  
+end
 
-a = []
-n = gets.to_i
-n.times { a.push gets.to_i }
+input
 
-puts a.sort
