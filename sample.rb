@@ -1,5 +1,4 @@
-# ** 累乗
+hour = gets.to_i
+day = gets.to_i
 
-puts "回数を入力してください"
-n = gets.to_i
-puts 2 ** n
+puts hour * day
