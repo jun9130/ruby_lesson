@@ -1,4 +1,3 @@
-hour = gets.to_i
-day = gets.to_i
-
-puts hour * day
+first = gets.chomp
+second = gets.chomp
+puts "#{first}@#{second}"
