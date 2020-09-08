@@ -1,7 +1,4 @@
-array = [3, 2, 3, 4]
+a = gets.to_i
+b = gets.to_i
 
-n = 1
-array[0].times {
-  puts array[0 + n]
-  n += 1
-}
+puts a % b
