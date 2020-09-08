@@ -1,3 +1,7 @@
-num = gets
-day = num.split(" ")
-puts "#{day[0]}/#{day[1]}/#{day[2]}"
+array = [3, 2, 3, 4]
+
+n = 1
+array[0].times {
+  puts array[0 + n]
+  n += 1
+}
