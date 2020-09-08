@@ -1,6 +1,3 @@
-num = gets.to_i
-
-puts num.abs
-puts num.magnitude
-
-#abs magnitude→絶対値を返す
+num = gets
+day = num.split(" ")
+puts "#{day[0]}/#{day[1]}/#{day[2]}"
