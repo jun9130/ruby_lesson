@@ -1,7 +1,5 @@
-puts "小文字の英単語を入れてください"
-word = gets
-puts word.upcase #upcase→大文字の文字列を返す
+# a, b = 1, 10
+# puts a, b
 
-puts "小文字の英単語を入れてください"
-word = gets
-puts word.downcase #downcase→小文字の文字列を返す
+a, b = gets.split(" ") #多重代入 #splitでスペースごとに分割して文字列に代入
+puts a.to_i - b.to_i #to_iで文字列から数値へ変換
