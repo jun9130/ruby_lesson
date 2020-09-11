@@ -1,14 +1,8 @@
-# num = gets.to_s
-# puts num.size.to_i - 1 
+puts "半角スペースで数字を複数入力してください"
+input = gets
+num = input.split(" ") #array
 
-puts "入力してください"
-num = gets.to_s.chomp #getsメソッドは改行\nがつくのでchompで改行を削除
-puts num.size
-
-
-p "123".size
-
-a = gets
-p a
-b = gets.chomp
-p b
+num.map {
+  |n| n
+  p n.to_i
+}
