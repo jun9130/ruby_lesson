@@ -1,5 +1,14 @@
-# a, b = 1, 10
-# puts a, b
+# num = gets.to_s
+# puts num.size.to_i - 1 
 
-a, b = gets.split(" ") #多重代入 #splitでスペースごとに分割して文字列に代入
-puts a.to_i - b.to_i #to_iで文字列から数値へ変換
+puts "入力してください"
+num = gets.to_s.chomp #getsメソッドは改行\nがつくのでchompで改行を削除
+puts num.size
+
+
+p "123".size
+
+a = gets
+p a
+b = gets.chomp
+p b
