@@ -1,15 +1,13 @@
-a, b= 1
-p a
-p b #=> nil
+input_num = gets.to_i
 
-puts "改行\nする" #ダブルクオートで囲むと\nが機能する
-puts '改行\nしない'
+#変数に代入
+num =
+if input_num > 100
+  puts "#{input_num}は100以上です"
+elsif input_num > 50
+  puts "#{input_num}は100以下50以上です"
+else 
+  puts "#{input_num}は50以下です"
+end
 
-name = "佐藤"
-puts "hello, #{name}"
-puts 'hello, #{name}' #シングルクオートでは式展開使えない
-
-
-n = 3
-n *= 3
-p n
+num #メソッド呼び出し
