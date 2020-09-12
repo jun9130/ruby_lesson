@@ -1,8 +1,15 @@
-name = { tanaka: 22}
-name.each do |key, value|
-  puts "#{key} #{value + 1}"
-end 
+a, b= 1
+p a
+p b #=> nil
+
+puts "改行\nする" #ダブルクオートで囲むと\nが機能する
+puts '改行\nしない'
+
+name = "佐藤"
+puts "hello, #{name}"
+puts 'hello, #{name}' #シングルクオートでは式展開使えない
 
 
-# line = readlines.map(&:chomp)
-# p line 
+n = 3
+n *= 3
+p n
