@@ -1,3 +1,7 @@
-input_match = gets.to_i
+input = gets.to_i
 
-puts input_match * (input_match - 1) / 2
+if input.odd?
+  puts "OK"
+else
+  puts "NG"
+end
