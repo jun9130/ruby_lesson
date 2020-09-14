@@ -1,3 +1,3 @@
-word = gets
+num = gets.chomp.split(" ")
 
-puts "Best in #{word}"
+puts num[1].to_i - num[0].to_i
