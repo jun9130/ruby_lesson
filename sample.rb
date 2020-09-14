@@ -1,4 +1,3 @@
-input = gets.to_i
-input_2 = gets.to_i
+word = gets
 
-puts input * input - input_2
+puts "Best in #{word}"
