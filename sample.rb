@@ -1,7 +1,4 @@
 input = gets.to_i
+input_2 = gets.to_i
 
-if input.odd?
-  puts "OK"
-else
-  puts "NG"
-end
+puts input * input - input_2
