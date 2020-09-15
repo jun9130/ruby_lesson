@@ -1,9 +1,12 @@
 count = gets.to_i
+ary = []
 
 count.times {
-  name = gets.chomp.split(" ")
-  puts "#{name[0].chomp} #{name[1].to_i + 1}"
+  num = gets.chomp
+  num_length = num.length
+  ary << num_length
 } 
 
+puts ary
 
 
