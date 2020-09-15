@@ -1,12 +1,10 @@
-count = gets.to_i
-ary = []
+a = gets.chomp #chomp
+p a
+b = gets.chomp
+p b
 
-count.times {
-  num = gets.chomp
-  num_length = num.length
-  ary << num_length
-} 
-
-puts ary
-
-
+if b.include? a #変数bは変数aに含まれているか
+  puts "YES"
+else
+  puts "NO"
+end
