@@ -1,3 +1,9 @@
-num = gets.chomp.split(" ")
+count = gets.to_i
 
-puts num[1].to_i - num[0].to_i
+count.times {
+  name = gets.chomp.split(" ")
+  puts "#{name[0].chomp} #{name[1].to_i + 1}"
+} 
+
+
+
