@@ -1,10 +1,7 @@
-a = gets.chomp #chomp
-p a
-b = gets.chomp
-p b
+input_num = gets
+num = input_num.chars
 
-if b.include? a #変数bは変数aに含まれているか
-  puts "YES"
-else
-  puts "NO"
-end
+a = num[0].to_i + num[3].to_i
+b = num[1].to_i + num[2].to_i
+
+puts "#{a}#{b}"
