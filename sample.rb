@@ -1,7 +1,10 @@
-input_num = gets
-num = input_num.chars
+input_num = gets.chomp #chompを使う
 
-a = num[0].to_i + num[3].to_i
-b = num[1].to_i + num[2].to_i
 
-puts "#{a}#{b}"
+if input_num.length == 3
+  puts input_num
+elsif input_num.length == 2
+  puts "0#{input_num}"
+else 
+  puts "00#{input_num}"
+end
