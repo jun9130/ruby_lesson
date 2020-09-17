@@ -1,4 +1,16 @@
-n = gets.to_i
-m = gets.to_i
+input = gets.chomp.split(":")
 
-puts n / m
+a, b = input[0].chars #Stringクラスcharsメソッドで分割
+c, d = input[1].chars 
+
+if a == "0"
+  puts b
+else
+  puts "#{a}#{b}"
+end
+
+if c == "0"
+  puts d
+else
+  puts "#{c}#{d}"
+end
