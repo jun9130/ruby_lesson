@@ -1,16 +1,6 @@
-input = gets.chomp.split(":")
+sum = gets.chomp.split(" ")
+a = sum[0].to_i * 6000
+b = sum[1].to_i * 4000
+puts "#{a + b}"
 
-a, b = input[0].chars #Stringクラスcharsメソッドで分割
-c, d = input[1].chars 
 
-if a == "0"
-  puts b
-else
-  puts "#{a}#{b}"
-end
-
-if c == "0"
-  puts d
-else
-  puts "#{c}#{d}"
-end
