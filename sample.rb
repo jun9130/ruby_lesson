@@ -1,2 +1,2 @@
-word = gets.chomp
-p word[0,3]  
+check = gets
+puts check.count('c')  
