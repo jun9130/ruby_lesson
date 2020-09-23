@@ -1,4 +1,7 @@
-word = 'aaa'
-puts word
-puts word.upcase! #破壊的メソッド
-puts word
+one = gets
+two = gets 
+three = gets
+
+puts "Gold #{one}"
+puts "Silver #{two}"
+puts "Bronze #{three}"
