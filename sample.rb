@@ -1,7 +1,4 @@
-one = gets
-two = gets 
-three = gets
+m = gets.to_i
+n = gets.to_i
 
-puts "Gold #{one}"
-puts "Silver #{two}"
-puts "Bronze #{three}"
+puts m * n
