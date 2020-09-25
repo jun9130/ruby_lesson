@@ -1,4 +1,2 @@
-m = gets.to_i
-n = gets.to_i
-
-puts m * n
+input = gets.split(" ")
+puts input[0].to_i - input[1].to_i
