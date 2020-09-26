@@ -1,2 +1,6 @@
-input = gets.split(" ")
-puts input[0].to_i - input[1].to_i
+n = 1
+
+4.times {
+  n += 1
+  puts n
+}
