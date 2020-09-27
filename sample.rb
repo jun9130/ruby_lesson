@@ -1,15 +1,40 @@
-ary = [1, 2, 3]
-p ary[0]
-ary[0] = 100
-p ary[0]
-ary << 999
-p ary[3]
+numbers = [1, 2, 3, 4, 5]
+sum = 0
 
-a = [[1,2,3],["a","b","c"],["あ","い","う"]]
-p a[1][0]
-p a[5] #=> nil
+numbers.each do |n| 
+  sum += n
+end
 
-num = [1, 2, 3]
-p num
-num.delete_at(1)
-p num
+puts sum
+
+
+
+numbers = [1, 2, 3, 4, 5]
+sum = 0
+
+numbers.each {|n| sum += n}
+puts sum
+
+
+
+numbers = [1, 2, 3, 4]
+sum = 0
+
+numbers.each do |n|
+  sum_value = n.even? ? n * 10 : n
+  sum += sum_value #sum = sum_value + sum
+end
+puts sum
+
+
+
+numbers = [1, 2, 3, 4, 5]
+new_numbers = []
+numbers.each {|n| new_numbers << n * 10}
+puts new_numbers
+
+
+
+numbers = [1, 2, 3, 4, 5]
+new_numbers = numbers.map {|n| n * 10}
+puts new_numbers

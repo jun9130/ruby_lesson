@@ -38,6 +38,9 @@ num[0] = 100
 num = [1, 2, 3]
 num << 100
 
+- eachメソッド
+- map/collectメソッド
+
 
 
 Array#joinメソッド 連結
