@@ -6,5 +6,5 @@ num.times {
   ary << gets.to_i
 }
 
-puts ary.sort
+puts ary.sort.reverse
 
