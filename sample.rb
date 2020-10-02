@@ -37,9 +37,17 @@
 # charge(22)
 
 
-p (1..5).to_a
+a = [1, 2, 3, 4, 5]
+p a[3, 2] #[要素の位置, 取得の長さ]
 
+a = [1, 2, 3, 4, 5]
+p a.values_at(0, 3, 4)
 
-sum = 0
-(1..5).each{|n| sum = n + sum}
-puts sum
+a = [1, 2, 3, 4, 5]
+#最後の要素を取得する方法
+p a[a.size - 1]
+p a[a.length - 1]
+p a[-1]
+p a.last
+
+p a.last(3) #最後から3つ
