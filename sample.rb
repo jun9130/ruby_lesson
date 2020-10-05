@@ -12,28 +12,20 @@
 
 
 
+fruits = ['apple', 'orange', 'banana']
+fruits.each_with_index {|fruit, index| puts "#{index}: #{fruit}"}
 
-name = 'Mike'
-
-case name
-when 'Cindy'
-  puts "Hi, Cindy"
-when 'Tom'
-  puts "Hi, Tom"
-when 'Mike'
-  puts "Hi, Mike"
-else
-  puts "Hi, #{name}"
+fruits = ['apple', 'orange', 'banana']
+fruits.each_with_index do |fruit, index| 
+  puts "#{index}: #{fruit}"
 end
 
-name = 'Mike'
+fruits = ['apple', 'orange', 'banana']
+fruits.map.with_index {|fruit, index| puts "#{index}: #{fruit}"}
 
-if name == 'Cindy'
-  puts "Hi, Cindy"
-elsif name == 'Tom'
-  puts "Hi, Tom"
-elsif name == 'Mike'
-  puts "Hi, Mike"
-else
-  puts "Hi, #{name}"
-end
+fruits = ['apple', 'orange', 'banana']
+fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
+
+
+
+
