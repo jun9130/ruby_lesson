@@ -12,20 +12,20 @@
 
 
 
-fruits = ['apple', 'orange', 'banana']
-fruits.each_with_index {|fruit, index| puts "#{index}: #{fruit}"}
+# fruits = ['apple', 'orange', 'banana']
+# fruits.each_with_index {|fruit, index| puts "#{index}: #{fruit}"}
 
-fruits = ['apple', 'orange', 'banana']
-fruits.each_with_index do |fruit, index| 
-  puts "#{index}: #{fruit}"
-end
+# fruits = ['apple', 'orange', 'banana']
+# fruits.each_with_index do |fruit, index| 
+#   puts "#{index}: #{fruit}"
+# end
 
-fruits = ['apple', 'orange', 'banana']
-fruits.map.with_index {|fruit, index| puts "#{index}: #{fruit}"}
+# fruits = ['apple', 'orange', 'banana']
+# fruits.map.with_index {|fruit, index| puts "#{index}: #{fruit}"}
 
-fruits = ['apple', 'orange', 'banana']
-fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
-
-
+# fruits = ['apple', 'orange', 'banana']
+# fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
 
 
+num= gets.split(" ")
+puts num[0].to_i ** 3 - num[1].to_i ** 3
