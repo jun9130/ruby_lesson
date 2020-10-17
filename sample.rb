@@ -27,5 +27,10 @@
 # fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
 
 
-num= gets.split(" ")
-puts num[0].to_i ** 3 - num[1].to_i ** 3
+num= gets.to_i
+
+if num > 1000
+  puts num + 3
+else
+  puts num
+end
