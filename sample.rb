@@ -27,10 +27,6 @@
 # fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
 
 
-num= gets.to_i
-
-if num > 1000
-  puts num + 3
-else
-  puts num
-end
+num = []
+10.upto(20) {|n| num << n}
+puts num
