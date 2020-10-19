@@ -27,6 +27,10 @@
 # fruits.each.with_index(1) {|fruit, index| puts "#{index}: #{fruit}"}
 
 
-num = []
-10.upto(20) {|n| num << n}
-puts num
+class User
+  def hello
+    puts 'Hello'
+  end
+end
+user = User.new
+user.hello
