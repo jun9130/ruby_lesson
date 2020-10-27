@@ -5,8 +5,5 @@
 # ary = [2, 4, 3, 0, 2, 0, 5, 0]
 # p ary.sum / ary.length
 
-def test
-  p 'OK'
-end
-
-test
+ary = [5, 4, 5]
+p ary.sum / ary.length
