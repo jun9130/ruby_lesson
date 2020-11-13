@@ -1,5 +1,2 @@
-num = []
-10.upto(15) {
-  |n| num << n
-}
-p num
+input_line = gets.split(" ")
+puts input_line[0].to_i - input_line[1].to_i
