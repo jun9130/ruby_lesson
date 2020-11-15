@@ -1,2 +1,16 @@
-currencies = {:japan => 'yen', :us => 'dollar', :india => 'rupee' }
-p currencies[:us]
+class Product
+  @name = 'Product'
+
+  def self.name
+    @name
+  end
+
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+
+end
