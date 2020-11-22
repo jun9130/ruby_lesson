@@ -1,8 +1,2 @@
-fruits = ['apple', 'orange', 'melon']
-fruits.each_with_index {
-  |fruit, i| puts "#{i}: #{fruit}"
-}
-
-fruits.map.with_index(10){
-  |fruit, i| puts "#{i}: #{fruit}"
-}
+range = 1..5
+puts range.include?(0)
