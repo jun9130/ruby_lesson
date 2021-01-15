@@ -1,4 +1,1 @@
-[5, 10, 15].each_with_index do |n, index|
-  p [n, index]
-end
-
+puts [10, 20, 30].each.map {|n| n * 10 }  
