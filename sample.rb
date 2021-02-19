@@ -1,12 +1,39 @@
-input_line = gets.chomp 
-word_count = input_line.length
-surround =  word_count + 2
- 
-first_word = input_line.insert(0, "+")
+input_line = []
+input_line = gets.chomp.chars
 
-first_word_count  = word_count + 1
-surround_word = first_word.insert(first_word_count ,"+")
+word = []
 
-puts "+" * surround
-puts surround_word 
-puts "+" * surround
+input_line.each do |i|
+  if i == "A"
+    word << "4"
+  elsif i == "E"
+    word << "3"
+  elsif i == "G"
+    word << "6"
+  elsif i == "I"
+    word << "1"
+  elsif i == "O"
+    word << "0"
+  elsif i == "S"
+    word << "5"
+  elsif i == "Z"
+    word << "2"
+  else
+    word << i
+  end
+end
+
+puts word.join
+
+
+
+
+
+
+# A	4
+# E	3
+# G	6
+# I	1
+# O	0
+# S	5
+# Z	2
