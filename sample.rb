@@ -3,7 +3,7 @@ input_line = gets.split(" ")
 balance = input_line[0].to_i #残高
 ride = input_line[1].to_i #乗車回数
 point = 0 
-output = []
+
 
 ride.times {
   fare = gets.to_i
