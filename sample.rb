@@ -1,19 +1,17 @@
-puts "日数を入力してください"
-days = gets.to_i
-
-days.times {
-  # 13:00 1 30
-  time = gets.split(" ")
-  #1
-  add_hour = time[1].to_i
-  #30
-  add_minute = time[2].to_i
-  #13,00
-  hour, minutes = time[0].split(":")
+class User
+  def initialize(name:, age:)
+    @name = name
+    @age = age
+  end
   
-  if hour.to_i + add_hour > 24
-     puts "0#{0 + add_hour - 2}"
-  end 
-}
+  def greet
+    if @age <= 12
+      puts "僕は#{@name}だよ"
+    else
+      puts "僕は#{@name}です"
+    end 
+  end
+end
 
-
+taro = User.new(name: "taro", age: 1) 
+taro.greet
