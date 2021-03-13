@@ -1,9 +1,7 @@
-def multiplication(num)
-  if num * num > 10
-    puts "#{num}の2乗は10より大きいです."
-  else
-    puts "#{num}の2乗は10より小さいです."
+class Test
+  def initialize
+    puts "インスタンス生成で必ず呼ばれる"
   end
 end
 
-multiplication(10)
+Test.new
