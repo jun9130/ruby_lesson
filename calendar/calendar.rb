@@ -13,11 +13,9 @@ print "   " * first_week
 
 wday = first_week
 (1..last_day).each do |day|
-  print day.to_s.rjust(2) + " "    
+  print day.to_s.rjust(2) + " "
   wday = wday + 1
-  print "\n" if wday % 7 == 0                     
+  print "\n" if wday % 7 == 0
 end
 
-if wday % 7 != 0
-  print "\n"
-end
+print "\n"
