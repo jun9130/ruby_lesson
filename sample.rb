@@ -1,6 +1,6 @@
 require 'date'
 
-year_month = Date.today.strftime('%Y %b')
+month_year = Date.today.strftime('%B %Y')
 year = Date.today.year
 month = Date.today.month
 first_week = Date.new(year, month, 1).wday
@@ -8,7 +8,7 @@ last_day = Date.new(year, month, -1).day
 
 week = "Su Mo Tu We Th Fr Sa"
 
-puts year_month
+puts month_year
 puts week
 print "   " * first_week
 
