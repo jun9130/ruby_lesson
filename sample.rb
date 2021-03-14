@@ -1,14 +1,7 @@
-class User
-  def initialize(name, age)
-    @name = name 
-    @age = age
-  end
+(1..10).each {|n| p n}
+("a".."z").each {|n| p n}
 
-  def greeting
-    puts "僕の名前は#{@name}です。年齢は#{@age}歳です。"
-  end
-end
+(11...20).each {|n| p n}
 
-user = User.new("taro", 23)
-user.greeting
 
+p ("a".."g").class
