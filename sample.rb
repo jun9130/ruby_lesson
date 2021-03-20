@@ -1,19 +1,17 @@
-def test(input)
-  output = []
-
-  input.each do |i|
-    if i.match(/\A(a|e|i|o|u|A|E|I|O|U|)\z/)
-     input.delete(i)
-    else
-     output << i
-    end
+module Chatting
+  def chat
+    p "hello"
   end
-  puts output.join
-
 end
 
+class Dog
+  include Chatting
+end
 
-input = []
-input = gets.chomp.chars
-test(input)
+class Cat
+  include Chatting
+end
+
+dog = Dog.new
+dog.chat
 
