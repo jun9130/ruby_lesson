@@ -1,8 +1,22 @@
-input = gets.to_i 
+fruits = ["apple", "orange", "banana"]
+p fruits[0]
+p fruits.length
 
-num = []
-output = gets.to_i
+fruits[0] = "lemon"
+p fruits
 
-puts num.abs
+fruits << "apple"
+p fruits
+
+fruits[10] = "grape"
+p fruits
 
 
+fruits.delete_at(0)
+p fruits
+
+fruits.delete_at(-1)
+p fruits
+
+fruits.delete(nil)
+p fruits
