@@ -1,22 +1,17 @@
-fruits = ["apple", "orange", "banana"]
-p fruits[0]
-p fruits.length
+num = gets.to_i
 
-fruits[0] = "lemon"
-p fruits
+input = []
+output = []
 
-fruits << "apple"
-p fruits
+input << gets.chomp.split(" ")
+p input.class
 
-fruits[10] = "grape"
-p fruits
+array = input.map{|n| n.to_i }
+p array.class
 
+array.each do |a|
+  output << a if a % 3 == 0 
+end
 
-fruits.delete_at(0)
-p fruits
+puts output.length
 
-fruits.delete_at(-1)
-p fruits
-
-fruits.delete(nil)
-p fruits
