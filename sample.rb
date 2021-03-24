@@ -1,9 +1,13 @@
-input = gets
-num = gets.chomp.split(" ").map{|n| n.to_i }
+num = gets.to_i
+input_num = []
 
-output = []
-num.each do |n|
-  output << n if n % 3 == 0 
+num.times do
+  input_num << gets.to_i
 end
 
-puts output.length
+if input_num.index(7)
+  puts "YES"
+else
+  puts "NO"
+end
+
