@@ -1,13 +1,13 @@
 num = gets.to_i
-input_num = []
 
-num.times do
-  input_num << gets.to_i
-end
+input_numbers = []
 
-if input_num.index(7)
-  puts "YES"
-else
-  puts "NO"
-end
 
+num.times {
+  input_numbers << gets.chomp
+}
+
+number = gets.chomp
+
+num = input_numbers.index(number)
+puts num.to_i + 1
