@@ -1,23 +1,18 @@
-input = gets.to_i
-alphabet = []
+lowercase = ["japan", "usa", "uk"]
 
-input.times {
-    alphabet << gets.chomp
-}
+uppercase = lowercase.map {|lower| lower.upcase}
 
-input2 = gets.to_i
-word = []
+puts uppercase
 
-input2.times {
-    word << gets.chomp
-}
 
-for a in alphabet
-    for w in word
-        if w.include? a 
-            puts "YES"
-        else
-            puts "NO"
-        end
-    end
-end
+
+
+# lowercase = ["japan", "usa", "uk"]
+
+# uppercase = []
+
+# lowercase.each do |lower|
+#   uppercase << lower.upcase
+# end
+
+# puts uppercase
