@@ -1,13 +1,23 @@
-num = gets.to_i
+input = gets.to_i
+alphabet = []
 
-input_numbers = []
-
-
-num.times {
-  input_numbers << gets.chomp
+input.times {
+    alphabet << gets.chomp
 }
 
-number = gets.chomp
+input2 = gets.to_i
+word = []
 
-num = input_numbers.index(number)
-puts num.to_i + 1
+input2.times {
+    word << gets.chomp
+}
+
+for a in alphabet
+    for w in word
+        if w.include? a 
+            puts "YES"
+        else
+            puts "NO"
+        end
+    end
+end
