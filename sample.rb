@@ -1,3 +1,9 @@
-array = [1, 9, 3]
-p array.sort
-p array.sort_by {|a| a }
+input = gets.split(" ")
+output = []
+
+input[0].to_i.times {
+  output << gets.chomp
+}
+
+puts output.count(input[1])
+
