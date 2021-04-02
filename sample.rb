@@ -1,12 +1,8 @@
+input_num = gets.to_i
 
+data = []
+input_num.times {
+  data << gets.chomp.split(" ")
+}
 
-i = 10000
-
-while i >= 10000
-  if i % 13 == 0
-    puts i
-    break
-  end
-  i += 1
-end
-
+name = gets.chomp
