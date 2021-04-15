@@ -1,9 +1,6 @@
-input = gets.to_i
-puts input * 1500
+person = gets.to_i
+item = gets.to_i
 
-
-
-
-
+puts item % person
 
 
