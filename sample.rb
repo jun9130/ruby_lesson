@@ -1,6 +1,9 @@
-person = gets.to_i
-item = gets.to_i
+input = gets.to_i
 
-puts item % person
+if input.odd?
+  puts "odd" 
+else
+  puts "even"
+end
 
 
