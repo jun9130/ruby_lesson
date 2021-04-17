@@ -1,2 +1,4 @@
 input = gets.to_i
-puts input - 1
+input2 = gets.to_i
+
+puts input * input2
