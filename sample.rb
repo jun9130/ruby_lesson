@@ -1,4 +1,4 @@
 input = gets.to_i
 input2 = gets.to_i
 
-puts input * input2
+puts 180 - input - input2
