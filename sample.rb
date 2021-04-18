@@ -1,4 +1,12 @@
-input = gets.to_i
-input2 = gets.to_i
+count = gets.to_i
 
-puts 180 - input - input2
+numbers =[]
+
+count.times {
+  num = gets.to_i
+  if num >= 5
+    numbers << num
+  end
+}
+
+puts numbers.sum
