@@ -1,3 +1,3 @@
 input = gets.to_i
 
-puts 7 - input
+puts 1 + input
