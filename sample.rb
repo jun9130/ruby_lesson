@@ -1,3 +1,6 @@
-input = gets.to_i
+count = gets.to_i
 
-puts 1 + input
+count.times {
+  input = gets.to_i
+  puts input
+}
