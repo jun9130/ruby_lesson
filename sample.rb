@@ -1,7 +1,4 @@
-array = ["HND", "NRT", "KIX", "NGO", "NGO"]
+array = ["HND", "NRT", "KIX", "NGO", "NGO", "NGO", "NGO", "NGO"]
 
-if array.length - array.uniq.length > 0
-  puts true
-else
-  puts false
-end
+hash = array.group_by(&:itself)
+hash.map { |key, value| puts value.count if value.count > 1 }
