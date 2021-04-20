@@ -1,15 +1,7 @@
-count = gets.to_i
-integers = []
+array = ["HND", "NRT", "KIX", "NGO", "NGO"]
 
-
-count.times {
- int1, int2 = gets.chomp.split(" ")
- if int1 == int2
-  integers << int1.to_i * int2.to_i
- else
-  integers << int1.to_i + int2.to_i
- end
-}
-
-puts integers.sum
-
+if array.length - array.uniq.length > 0
+  puts true
+else
+  puts false
+end
