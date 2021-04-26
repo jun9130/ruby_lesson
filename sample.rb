@@ -1,2 +1,11 @@
-input = gets.chomp
-puts input.length
+sarch_word = gets.chomp
+input = gets.chomp.chars
+n = 0
+
+input.each do |i|
+  if i.include? sarch_word
+    n += 1
+  end
+end
+
+puts n
