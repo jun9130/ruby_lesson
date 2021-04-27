@@ -3,7 +3,7 @@ input = gets.chomp.chars
 n = 0
 
 input.each do |i|
-  if i.include? sarch_word
+  if i == sarch_word
     n += 1
   end
 end
