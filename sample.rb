@@ -1,16 +1,9 @@
-input, input2 = gets.split(" ")
-first = input.to_i - 1
-last = input2.to_i - 1
+input = gets.chomp
+puts input.length
 
-word = gets.chomp.chars
+input2 = gets.chars
+puts input2[0]
 
-new_word = word.map.with_index do |x, i|
-  case i
-  when first..last
-    x.upcase
-  else
-    x
-  end
-end
+input3 = gets.chars
+puts input3
 
-puts new_word.join
