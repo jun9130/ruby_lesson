@@ -1,12 +1,11 @@
 num = gets.to_i
-input5 = gets.chomp.chars
-num1 = num - 1
-num2 = num
+puts num + 1
 
-if num == input5.length
-  puts input5[num1].insert(1, " ")
-else
-  puts input5[num1..num2].join(" ")
-end
-
+count = gets.to_i
+int = []
+count.times {
+  input = gets.split(" ")
+  int << input[1].to_i
+}
+puts int
 
