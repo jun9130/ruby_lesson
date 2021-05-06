@@ -15,14 +15,15 @@
 # int_ary = array.map(&:to_i) 
 # puts int_ary.sort{|a, b| a.to_i <=> b.to_i }
 
-count = gets.to_i
-ary = []
-str_ary = []
 
-count.times {
-  ary = gets.split(" ")
-  str_ary << ary[0]
+num = gets.chomp.to_i
+array = {}
+
+num.times {
+  line = gets.chomp.split(' ')
+  array[line[1].to_i] = line[0]
 }
 
-puts str_ary.sort
+array = array.sort
 
+array.each { |ele| puts ele[1] }
