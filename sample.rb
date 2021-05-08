@@ -1,2 +1,4 @@
-p '0123'[2...3]
-p '0123'[2..3]
+input = gets.chomp
+
+puts input[0..1]
+
