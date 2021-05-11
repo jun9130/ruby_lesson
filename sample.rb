@@ -1,5 +1,7 @@
-rank = {'taro' => 3, 'sako' => 37, 'yosuke' => 12}
-puts rank
+# input1 = gets.chomp
+# puts input1
 
-rank.except(:taro)
-puts rank
+input = gets.chomp
+input_last = input.length - 1
+
+puts (input[0]..input[input_last]).to_a
