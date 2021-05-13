@@ -16,4 +16,11 @@ input.length.times {
   n += 1
 }
 
+if score.include?("0")
+  puts "OK"
+else
+  puts "NG"
+end
+
 p score
+
