@@ -1,2 +1,1 @@
-array = [1, 21, 3, 2, 1, 11, 2, 2,  ,2]
-puts array.delete(2) 
+[1, 22, 3, 4, 55, 77].select { |num| num.even? } 
