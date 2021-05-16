@@ -1,1 +1,9 @@
-[1, 22, 3, 4, 55, 77].select { |num| num.even? } 
+hash = {
+  Kyoko: "B",
+  Rio: "O",
+  Tsubame: "AB",
+  KurodaSensei: "A",
+  NekoSensei:	"A"
+}
+
+puts hash
