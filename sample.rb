@@ -7,3 +7,4 @@ hash = {
 }
 
 puts hash
+hash.each { |user, blood| puts "#{user} #{blood}" }
