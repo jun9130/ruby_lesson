@@ -8,3 +8,7 @@ dimensions.each do |length, width|
   areas << length * width
 end
 puts areas
+
+sum = 0
+10.times { |n| sum += n}
+puts sum
