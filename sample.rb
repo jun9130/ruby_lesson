@@ -1,15 +1,3 @@
-counts = gets.to_i
-strings = []
-counts.times do |i|
-  string = gets.to_s.strip.downcase.chomp
-  if strings.include?(string)
-    strings.delete(string)
-    strings << string
-  else
-    strings << string
-  end
-end
-
-(strings.length-1).downto(0) do |i|
-  puts strings[i]
-end
+numbers = [10, 20, 30, 40, 50]
+new_numbers = numbers.map {|n| n * 10}
+puts new_numbers
