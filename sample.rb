@@ -1,5 +1,10 @@
-numbers = [1, 2, 3, 4, 5]
-numbers.each do |n|
-  next if n.even?
-  puts n 
-end
+input = gets.chomp
+n = 0
+score = []
+
+input.length.times {
+  score << input[n]
+  n += 1
+}
+
+p score
